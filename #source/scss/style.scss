@@ -1,0 +1,469 @@
+@import "nullStyle.scss";
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('../../fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Bold.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Myriad Pro';
+  }
+
+  .header{
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+.title{
+    font-size: clamp(24px, 3vw, 34px);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.line{
+    padding: 2% 0 0 0;
+    border-bottom: 2px solid  #000000;
+    width: 110px;
+}
+
+.header__container{
+    padding: clamp(50px,5vw,160px) 0 0 0;
+    height: 100%;
+    max-width: 100%;
+    background: url(../img/BG-Header.png) 0 0/100% no-repeat;
+    background-size: cover;
+    color: #fff;
+    line-height: clamp(28px, 3vw, 40px);
+    width: 100%;   
+
+    &__logo{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0 clamp(10px, 3vw, 150px) 0;
+        max-width: 300px;
+    }
+    &__title{
+        font-size: clamp(28px, 3vw, 34px);
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+    &__subTitle{
+        font-size: clamp(22px, 3vw, 34px);
+        letter-spacing: 3px;
+    }
+    &__line{
+        padding: clamp(30px,3vw,60px) 0 0 0;
+        margin: 0 auto;
+        border-bottom: 2px solid  #fff;
+        width: 110px;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top:  clamp(10px, 10vw, 200px);
+        margin: 0 auto;
+
+        button{
+            margin: 0 auto;
+            padding: 15px 0px;
+            margin-bottom: clamp(15px,2vw,50px);
+            width: 100%;
+            width: 180px;
+            max-height: 50px;
+            background-image: none; 
+            background: transparent;
+            border: 1px solid  #fff;
+            color: #fff;
+            text-transform: uppercase;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.438);
+            }
+        }
+    }
+   
+}
+
+.menu{
+    &__container{
+        margin: 0 auto;    
+        padding: clamp(8px,2vw,20px) 0;
+        box-shadow: 5px 5x 5x #121212;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        &__link{
+            font-size: 14px;
+            color: #51413c;
+            padding: 0 clamp(15px, 3vw, 25px);
+            &:hover{
+                font-weight: bold;
+            }
+        }
+        &__line{
+            border-bottom: 1px #f2f2f2 solid;
+        }
+    }
+}
+.aboutUS {
+    padding: 7.5% 0 5% 0;
+
+    text-align: center;
+
+    &__title{
+        font-size: clamp(24px, 3vw, 34px);
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    &__line {
+        padding: 2% 0 0 0;
+        margin: 0 auto;
+        border-bottom: 2px solid  #000000;
+        width: 110px;
+
+    }
+
+    &__subTitle {
+        padding-top: 2%;
+        line-height: clamp(18px, 3vw, 26px);
+        color: #8e8d8d;
+        font-size: clamp(12px, 3vw, 14px);
+    }
+
+    &__blocks {
+        max-width: 46.8%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 4.5%;
+
+        &__content{
+
+            padding: 0 2.4%;
+            img{
+                max-width: 100px;
+            }
+
+            &__title{
+                font-size: clamp(16px, 3vw, 34px);
+                // font-size: 24px;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                padding: 40px 0;
+            }
+
+            &__subTitle{
+                line-height: clamp(18px, 3vw, 26px);
+                color: #8e8d8d;
+                font-size: clamp(12px, 3vw, 14px);
+            }
+        }
+    }
+}
+.aboutUS--container {
+    margin: 0 auto;
+}
+
+.portfolio {
+    padding: 110px 0 0 0;
+    text-align: center;
+    background-color: #f3f3f3;
+
+    &__title {
+        font-size: clamp(24px, 3vw, 34px);
+        letter-spacing: 5px;
+    }
+
+    &__line line{
+        padding: 2% 0 0 0;
+        margin: 0 auto;
+        border-bottom: 2px solid  #000000;
+        width: 110px;
+    }
+
+    &__links {
+        padding: 2% 0 150px 0;
+        word-spacing: 50px;
+
+        &__link{
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #3c3c3c;
+        }
+    }
+
+    &__block {
+        &__images{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            &__image{
+                margin: 15px;
+                width: 540px;
+                min-height: 360px;
+                background-color: #eaeaea;
+
+            }
+        }
+    }
+
+    &__button {
+        padding: 60px 0;
+        margin: 0 auto;
+        button{
+            padding: 15px 0px;
+            width: 100%;
+            max-width: 180px;
+            max-height: 50px;
+            background-image: none; 
+            background: transparent;
+            border: 1px solid  #000000;
+            color: #000000;
+            text-transform: uppercase;
+            &:hover{
+                background-color: rgba(175, 175, 175, 0.438);
+            }
+    }   }
+}
+
+.active{
+    color: #ada074;
+}
+
+.portfolio--container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parners {
+    background: url(../img/Без\ имени-1.png) 0 0px no-repeat;
+    background-size: cover;
+    // height: 50%;
+
+    &__title {
+        padding: clamp(50px, 5vw, 80px) 0 clamp(70px, 5vw, 100px) 0;
+        font-size: clamp(24px, 3vw, 34px);
+        letter-spacing: 5px;
+        color: #fff;
+    }
+
+    &__images {
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &__logo-company-parners{
+            padding: 0 50px 100px;
+        }
+    }
+}
+.parners--container {
+    text-align: center;
+    width: 100%;
+}
+
+.contact {
+    padding: 180px 10px 0;
+    &__title {
+        text-align: center;
+    }
+
+    &__line {
+        margin: 0 auto;
+    }
+
+    &__information {
+        width: 100%;
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+
+        &__firstline{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0 80px 0;
+
+            &__inf{
+                background-color: #f8f7f7;
+                border-top: 1px solid #000000;
+                width: 100%;
+                min-height: 40px;
+            }
+            
+            &__inp{
+                margin: 0 5px;
+                width: 100%;
+                max-width: 160px;
+                p{
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    text-align: center;
+                    font-size: clamp(12px, 3vw, 14px);
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        &__secondline{
+
+            p{
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
+                font-size: clamp(12px, 3vw, 14px);
+                padding-bottom: 10px;
+            }
+
+            &__message{
+                background-color: #f8f7f7;
+                border-top: 1px solid #000000;
+                min-height: 120px;
+                width: 100%;
+                max-width: 360px;
+                
+            }
+        }
+
+        &__but{
+            display: flex;
+            justify-content: right;
+            padding-top: 40px;
+        }
+
+        &__send{
+            max-width: 50px;
+            background: none;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+    &__discription {
+        padding: 0 0 0 55px;
+        max-width: 300px;
+        font-size: clamp(12px, 3vw, 14px);
+        line-height: clamp(18px, 3vw, 26px);
+
+        &__text{
+
+        }
+        
+        &__name{
+            padding: clamp(30px, 5vw, 50px) 0 0 0;
+        }
+
+        &__links{
+
+            align-items: center;
+            padding: 10px 0 5px;
+        }
+
+        &__e-mail{
+            display: flex;
+            
+            .eml-child:nth-child(1){
+                font-weight: bold;
+            }
+
+            .eml-child:nth-child(2){
+                padding: 0 0 0 15px;
+            }
+        }
+    }
+}
+.contact--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+@media (max-width: 1400px){
+    .header__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+}
+
+@media (max-width: 950px){
+    .header__container{
+
+    &__logo{
+        img{
+            width: clamp(180px, 15vw, 300px);
+        }
+    }
+
+    &__button{
+        padding-top:  clamp(10px, 1vw, 200px);
+    }
+    }
+}
+
+@media (max-width: 540px) {
+    
+
+    .header{
+        height: auto;
+    }
+
+    .contact{
+        padding-top: 80px;
+    }
+    
+    .contact--container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .contact__information{
+        order: 2;
+
+        &__firstline{
+            padding-bottom: 50px;
+        }
+
+        &__but{
+            padding-top: 25px;
+            justify-content: center;
+        }
+
+        &__send{
+            font-size: 16px;
+        }
+    }
+
+    .contact__discription{
+        padding: 0 0 40px 0;
+        order: 1;
+
+        &__e-mail{
+            justify-content: center;
+        }
+    }
+}
