@@ -481,6 +481,9 @@ html, body {
   }
 }
 @media (max-width: 950px) {
+  .header {
+    height: auto;
+  }
   .header__container__logo img {
     width: clamp(180px, 15vw, 300px);
   }
@@ -490,7 +493,7 @@ html, body {
 }
 @media (max-width: 540px) {
   .header {
-    height: auto;
+    height: 80%;
   }
   .contact {
     padding-top: 80px;
