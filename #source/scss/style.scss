@@ -408,10 +408,15 @@ html, body {
 }
 
 @media (max-width: 1400px){
+
+    .header{
+        height: auto;
+    }
+
     .header__container{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         }
 }
 
@@ -425,7 +430,7 @@ html, body {
     }
 
     &__button{
-        padding-top:  clamp(10px, 1vw, 200px);
+        padding-top: clamp(60px, 10vw, 200px);
     }
     }
 }
@@ -434,7 +439,7 @@ html, body {
     
 
     .header{
-    height: 80%;
+    height: 100%;
     }
 
     .contact{

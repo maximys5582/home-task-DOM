@@ -470,6 +470,9 @@ html, body {
 }
 
 @media (max-width: 1400px) {
+  .header {
+    height: auto;
+  }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -478,9 +481,8 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media (max-width: 950px) {
@@ -488,12 +490,12 @@ html, body {
     width: clamp(180px, 15vw, 300px);
   }
   .header__container__button {
-    padding-top: clamp(10px, 1vw, 200px);
+    padding-top: clamp(60px, 10vw, 200px);
   }
 }
 @media (max-width: 540px) {
   .header {
-    height: 80%;
+    height: 100%;
   }
   .contact {
     padding-top: 80px;
